@@ -1,0 +1,14 @@
+{
+    "params": {
+        "checking_rate": 0.0,
+        "savings_rate": 0.0,
+        "last_reset": "yyyy-mm-dd",
+        "last_login": "yyyy-mm-dd"
+    },
+    "accounts": {},
+    "transactions": [],
+    "income": [],
+    "catagories": {},
+    "loans": {},
+    "loan_payments": []
+}
