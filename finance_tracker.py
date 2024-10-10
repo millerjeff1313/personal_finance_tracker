@@ -39,6 +39,9 @@ class FinanceTracker:
         self.data['params']['last_login'] = datetime.today().strftime('%Y-%m-%d')
         with open(self.filename, 'w') as file:
             json.dump(self.data, file)
+        backup_file = self.filename.split('.')[0] + '_backup.json'
+        with open("../" + backup_file, 'w') as file:
+            json.dump(self.data, file)
 
     ############################ MOVE MONEY ############################
     def add_transaction(self, amount, catagory, description):
